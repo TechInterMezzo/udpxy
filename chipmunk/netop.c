@@ -132,8 +132,7 @@ setup_listener( const char* ipaddr, int port, int* sockfd, int bklog )
 /* add or drop membership in a multicast group
  */
 int
-set_multicast( int msockfd, const struct in_addr* mifaddr,
-               const struct in_addr* s_in_addr, int opname )
+set_multicast( int msockfd, const struct in_addr* mifaddr, const struct in_addr* s_in_addr, char* opname )
 {
     struct sockaddr_in addr;
     /* Structure used for Source-Specific Multicast (RFC 3678) */
